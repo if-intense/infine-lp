@@ -51,11 +51,17 @@ body {
 .sect .ch-list {
   text-align: center;
   padding: 5px 10px; }
+  .sect .ch-list h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #434343; }
   .sect .ch-list h2 {
-    font-size: 2em;
-    color: #fff; }
+    font-size: 1.25em;
+    color: #fff;
+    padding-top: 15px; }
   .sect .ch-list p {
-    font-size: 1em;
+    font-size: 0.8em;
     color: #fff;
     line-height: 2em;
     text-align: center; }
@@ -130,24 +136,20 @@ body {
     margin: 0 40px; }
     .pt3 .sect p {
       text-align: center; }
-    .pt3 .sect .preservative-free {
-      margin: 5vh auto; }
-      .pt3 .sect .preservative-free h2 {
-        font-size: 32px; }
-      .pt3 .sect .preservative-free .center-text {
-        margin: 0 auto; }
-      .pt3 .sect .preservative-free p {
-        font-size: 16px;
-        color: #fff;
+    .pt3 .sect .w-n {
+      background: #f0d560;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 3px 3px #434343; }
+      .pt3 .sect .w-n ul {
+        margin: 20px auto;
+        text-align: center; }
+        .pt3 .sect .w-n ul li {
+          display: inline-block;
+          margin-right: 10px; }
+      .pt3 .sect .w-n p {
         font-weight: bold;
-        margin-top: 2vh;
-        line-height: 2em; }
-    .pt3 .sect ul {
-      list-style-type: none;
-      margin: 0 auto; }
-      .pt3 .sect ul li {
-        display: inline-block;
-        margin-right: 15px; }
+        font-size: 1.5em; }
 
 .pt4 {
   background: #434343; }
@@ -215,10 +217,12 @@ body {
         font-weight: bold; }
 
 .card {
-  background-color: transparent;
-  border: transparent; }
-  .card .card-text-area {
-    color: white; }
+  background-color: #fff;
+  padding: 5px; }
+  .card .card-title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold; }
 
 footer {
   background: #fff; }
@@ -236,6 +240,22 @@ footer {
         font-weight: bold;
         border-bottom: 1px solid #434343; }
 
+@media (min-width: 1200px) {
+  .card .title {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center; }
+  .card .card-text {
+    font-size: 1em;
+    padding: 10px; } }
+@media (max-width: 1199px) {
+  .card .title {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center; }
+  .card .card-text {
+    font-size: 0.9em;
+    padding: 10px 20px; } }
 @media (max-width: 992px) {
   .disp-product {
     margin: 20px auto; }
@@ -250,11 +270,24 @@ footer {
       height: calc(100vh / 4); }
       .pt2 .sect .char .content p {
         font-size: 0.8em; }
+  .pt2 .sect .ch-list h3 {
+    font-size: 1.25em; }
   .pt2 .sect .ch-list h2 {
-    font-size: 1.5em; }
+    font-size: 1em; }
   .pt2 .sect .ch-list p {
-    font-size: 0.9em; } }
-@media (max-width: 768px) {
+    font-size: 0.8em; } }
+@media screen and (min-device-width: 767px) and (max-device-width: 880px) {
+  /* STYLES HERE */
+  .pt2 .sect .ch-list h3 {
+    font-size: 0.9em; }
+  .pt2 .sect .ch-list h2 {
+    font-size: 0.8em; }
+  .pt2 .sect .ch-list p {
+    font-size: 0.6em; }
+
+  .pt4 .sect p {
+    font-size: 12px; } }
+@media (max-width: 767px) {
   .pt2 .sect .char {
     padding: 20px;
     border: rgba(80, 80, 80, 0.5) 1px solid;
@@ -291,20 +324,29 @@ footer {
   .disp-product {
     margin: 20px auto; }
 
-  .pt2 {
-    padding: 2vh 0; }
-    .pt2 .sect .char {
-      padding: 20px;
-      border: rgba(80, 80, 80, 0.5) 1px solid;
-      height: calc(100vh / 2);
-      max-height: 400px; }
-      .pt2 .sect .char .content {
-        background: rgba(255, 255, 255, 0.8);
-        height: calc(100vh / 3); }
-        .pt2 .sect .char .content h3 {
-          padding-top: 20px; }
-        .pt2 .sect .char .content p {
-          font-size: 0.8em; }
+  .sect .about-infine {
+    margin: 3vh auto;
+    padding: 20px 10px; }
+    .sect .about-infine p {
+      font-size: 14px;
+      color: #fff;
+      line-height: 2em; }
+    .sect .about-infine h4 {
+      font-size: 0.9em;
+      text-decoration: underline;
+      text-align: center;
+      color: #fff;
+      line-height: 2em;
+      font-weight: bold; }
+
+  .pt2 .sect {
+    padding-top: 3vh; }
+
+  .pt3 .sect .w-n ul {
+    text-align: left; }
+
+  .pt4 .sect p {
+    font-size: 14px; }
 
   footer {
     background: #fff; }
@@ -313,5 +355,23 @@ footer {
       font-size: 0.7em; }
       footer .footer-contents p a {
         padding: 0 5px; } }
+[data-ruby] {
+  position: relative; }
+
+[data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -1em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 0.5em; }
+
+@media (max-width: 375px) {
+  .sect .about-infine h4 {
+    font-size: 0.8em; }
+  .sect .about-infine p {
+    font-size: 0.8em;
+    margin-top: 3vh; } }
 
 /*# sourceMappingURL=index.css.map */
