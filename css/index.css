@@ -240,33 +240,37 @@ footer {
   .disp-product {
     margin: 20px auto; }
 
-  .pt2 {
-    padding: 4vh 0; }
-    .pt2 .sect .char {
-      padding: 20px;
-      border: rgba(80, 80, 80, 0.5) 1px solid;
-      height: calc(100vh / 3);
-      max-height: 325px; }
-      .pt2 .sect .char .content {
-        background: rgba(255, 255, 255, 0.8);
-        height: calc(100vh / 4); }
-        .pt2 .sect .char .content p {
-          font-size: 0.8em; } }
+  .pt2 .sect .char {
+    padding: 20px;
+    border: rgba(80, 80, 80, 0.5) 1px solid;
+    height: calc(100vh / 3);
+    max-height: 325px; }
+    .pt2 .sect .char .content {
+      background: rgba(255, 255, 255, 0.8);
+      height: calc(100vh / 4); }
+      .pt2 .sect .char .content p {
+        font-size: 0.8em; }
+  .pt2 .sect .ch-list h2 {
+    font-size: 1.5em; }
+  .pt2 .sect .ch-list p {
+    font-size: 0.9em; } }
 @media (max-width: 768px) {
-  .pt2 {
-    padding: 4vh 0; }
-    .pt2 .sect .char {
-      padding: 20px;
-      border: rgba(80, 80, 80, 0.5) 1px solid;
-      height: calc(100vh / 4);
-      max-height: 300px; }
-      .pt2 .sect .char .content {
-        background: rgba(255, 255, 255, 0.8);
-        height: calc(100vh / 5); }
-        .pt2 .sect .char .content h3 {
-          padding-top: 20px; }
-        .pt2 .sect .char .content p {
-          font-size: 0.8em; }
+  .pt2 .sect .char {
+    padding: 20px;
+    border: rgba(80, 80, 80, 0.5) 1px solid;
+    height: calc(100vh / 4);
+    max-height: 300px; }
+    .pt2 .sect .char .content {
+      background: rgba(255, 255, 255, 0.8);
+      height: calc(100vh / 5); }
+      .pt2 .sect .char .content h3 {
+        padding-top: 20px; }
+      .pt2 .sect .char .content p {
+        font-size: 0.8em; }
+  .pt2 .sect .ch-list h2 {
+    font-size: 1.25em; }
+  .pt2 .sect .ch-list p {
+    font-size: 0.8em; }
 
   .pt5 .sect .products {
     width: 100%;

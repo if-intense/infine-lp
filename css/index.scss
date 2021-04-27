@@ -219,7 +219,7 @@ body {
       text-decoration: underline;
       color:$primary-white;
       text-align: center;
-      
+
       span {
         text-shadow:1px 1px 3px #000;
       }
@@ -272,7 +272,7 @@ body {
           text-align:center;
           margin-top:3vh;
           font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-          font-weight: normal; 
+          font-weight: normal;
           font-size:24px;
         }
         h4 {
@@ -343,7 +343,6 @@ footer {
   }
 
   .pt2 {
-    padding:4vh 0;
     .sect {
       .char {
         padding:20px;
@@ -358,6 +357,14 @@ footer {
           }
         }
       }
+      .ch-list {
+        h2 {
+          font-size:1.5em;
+        }
+        p {
+          font-size:0.9em;
+        }
+      }
     }
   }
 
@@ -366,7 +373,7 @@ footer {
 
 @media (max-width:768px) {
   .pt2 {
-    padding:4vh 0;
+    // padding:4vh 0;
     .sect {
       .char {
         padding:20px;
@@ -382,6 +389,14 @@ footer {
           p {
             font-size:0.8em;
           }
+        }
+      }
+      .ch-list {
+        h2 {
+          font-size:1.25em;
+        }
+        p {
+          font-size:0.8em;
         }
       }
     }
