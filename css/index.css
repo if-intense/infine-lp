@@ -25,6 +25,9 @@ body {
 .sect h2.title {
   color: #fff;
   text-align: center; }
+.sect h2.title-p {
+  color: #434343;
+  text-align: center; }
 .sect h4 {
   font-size: 1em;
   text-align: center;
@@ -74,7 +77,8 @@ body {
   padding: 5vh 0; }
   .pt .sect h2 {
     color: black;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .pt .sect .about-oway {
     background: rgba(255, 255, 255, 0.67);
     border-radius: 5px;
@@ -176,45 +180,50 @@ body {
       margin: 0 !important; }
 
 .pt5 {
-  background: #808080;
+  background: #fff;
   padding: 4vh 0; }
+  .pt5 .sect h4 {
+    color: #000; }
   .pt5 .sect .owl-carousel .owl-stage {
     display: flex; }
   .pt5 .sect .owl-carousel .owl-item {
     display: flex;
     flex: 1 0 auto; }
-  .pt5 .sect .owl-carousel .product {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-    text-align: center;
-    background: #fff; }
-    .pt5 .sect .owl-carousel .product .caption {
+  .pt5 .sect .owl-carousel a {
+    color: black;
+    text-decoration: none; }
+    .pt5 .sect .owl-carousel a .product {
       display: flex;
-      flex: 1 0 auto;
-      flex-direction: column; }
-      .pt5 .sect .owl-carousel .product .caption .flex-text {
-        flex-grow: 1; }
-    .pt5 .sect .owl-carousel .product h3 {
+      flex-direction: column;
+      margin: 0 15px;
       text-align: center;
-      margin-top: 3vh;
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-weight: normal;
-      font-size: 24px; }
-    .pt5 .sect .owl-carousel .product h4 {
-      text-align: center;
-      color: #000; }
-    .pt5 .sect .owl-carousel .product h6 span {
-      font-weight: bold; }
-    .pt5 .sect .owl-carousel .product p.price {
-      color: #b51423; }
-      .pt5 .sect .owl-carousel .product p.price strong {
-        font-size: 2.5em; }
-    .pt5 .sect .owl-carousel .product p.with-tax {
-      font-size: 16px; }
-      .pt5 .sect .owl-carousel .product p.with-tax span {
-        font-size: 2em;
+      background: #fff; }
+      .pt5 .sect .owl-carousel a .product .caption {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column; }
+        .pt5 .sect .owl-carousel a .product .caption .flex-text {
+          flex-grow: 1; }
+      .pt5 .sect .owl-carousel a .product h3 {
+        text-align: center;
+        margin-top: 3vh;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: normal;
+        font-size: 24px; }
+      .pt5 .sect .owl-carousel a .product h4 {
+        text-align: center;
+        color: #000; }
+      .pt5 .sect .owl-carousel a .product h6 span {
         font-weight: bold; }
+      .pt5 .sect .owl-carousel a .product p.price {
+        color: #b51423; }
+        .pt5 .sect .owl-carousel a .product p.price strong {
+          font-size: 2.5em; }
+      .pt5 .sect .owl-carousel a .product p.with-tax {
+        font-size: 16px; }
+        .pt5 .sect .owl-carousel a .product p.with-tax span {
+          font-size: 2em;
+          font-weight: bold; }
 
 .card {
   background-color: #fff;
