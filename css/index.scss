@@ -190,10 +190,11 @@ body {
       text-align: center;
     }
     .w-n {
-      background:rgb(240,213,96);
+      background:rgba(255,255,255,1);
       padding:10px 20px;
       border-radius: 20px;
       box-shadow: 3px 3px $charcoal;
+
       ul {
         margin:20px auto;
         text-align:center;
@@ -205,7 +206,14 @@ body {
       p {
         font-weight: bold;
         font-size:1.5em;
+        line-height:1em;
+
       }
+      p span {
+        color:#000;
+        font-size:0.7em;
+      }
+
     }
 
   }
@@ -316,7 +324,28 @@ body {
 
 
 
+.match {
+  z-index: 999;
+  position:fixed;
+  top:80px;
+  right:3%;
+  padding:15px 20px;
+  background:$nobel;
+  font-weight:bold;
+  border-radius:10px;
+  box-shadow:2px 3px 6px $charcoal;
+  a {
+    text-shadow:1px 1px 1px $charcoal;
+    color:$primary-white;
+  }
+}
 
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: white;
+    border: none;
+}
 
 
 .card {
@@ -537,6 +566,9 @@ footer {
   .pt3 {
     .sect {
       .w-n {
+        p {
+          font-size:1.5em;
+        }
         ul {
           text-align: left;
         }

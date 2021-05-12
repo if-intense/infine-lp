@@ -141,7 +141,7 @@ body {
     .pt3 .sect p {
       text-align: center; }
     .pt3 .sect .w-n {
-      background: #f0d560;
+      background: white;
       padding: 10px 20px;
       border-radius: 20px;
       box-shadow: 3px 3px #434343; }
@@ -153,7 +153,11 @@ body {
           margin-right: 10px; }
       .pt3 .sect .w-n p {
         font-weight: bold;
-        font-size: 1.5em; }
+        font-size: 1.5em;
+        line-height: 1em; }
+      .pt3 .sect .w-n p span {
+        color: #000;
+        font-size: 0.7em; }
 
 .pt4 {
   background: #434343; }
@@ -224,6 +228,26 @@ body {
         .pt5 .sect .owl-carousel a .product p.with-tax span {
           font-size: 2em;
           font-weight: bold; }
+
+.match {
+  z-index: 999;
+  position: fixed;
+  top: 80px;
+  right: 3%;
+  padding: 15px 20px;
+  background: #9f9f9f;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px #434343; }
+  .match a {
+    text-shadow: 1px 1px 1px #434343;
+    color: #fff; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: white;
+  border: none; }
 
 .card {
   background-color: #fff;
@@ -351,6 +375,8 @@ footer {
   .pt2 .sect {
     padding-top: 3vh; }
 
+  .pt3 .sect .w-n p {
+    font-size: 1.5em; }
   .pt3 .sect .w-n ul {
     text-align: left; }
 
